@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e29448f1cca302f4eb3a65a699db53f6, type: 3}
+  m_Name: Level_05
+  m_EditorClassIdentifier: Assembly-CSharp::VentaDeBebidas.Data.LevelData
+  levelId: Level_05
+  displayName: Cajero con Vuelto
+  role: 0
+  difficulty: 1
+  startingMoney: 15000
+  availableProducts:
+  - {fileID: 11400000, guid: 349fbd8a3f5bf114b9309c474d68bc6d, type: 2}
+  - {fileID: 11400000, guid: 9cb2a36cc808b7843a1880f08ed6939f, type: 2}
+  - {fileID: 11400000, guid: 7c6f853537273964a925fb317e42cdda, type: 2}
+  - {fileID: 11400000, guid: 7a6a157cfc3a90a44a2eafd10996e4ba, type: 2}
+  customers:
+  - order:
+    - product: {fileID: 11400000, guid: 349fbd8a3f5bf114b9309c474d68bc6d, type: 2}
+      quantity: 1
+    paymentAmount: 10000
+    patienceSeconds: 0
+  - order:
+    - product: {fileID: 11400000, guid: 9cb2a36cc808b7843a1880f08ed6939f, type: 2}
+      quantity: 1
+    paymentAmount: 10000
+    patienceSeconds: 0
+  - order:
+    - product: {fileID: 11400000, guid: 7c6f853537273964a925fb317e42cdda, type: 2}
+      quantity: 1
+    paymentAmount: 10000
+    patienceSeconds: 0
+  - order:
+    - product: {fileID: 11400000, guid: 7a6a157cfc3a90a44a2eafd10996e4ba, type: 2}
+      quantity: 1
+    paymentAmount: 5000
+    patienceSeconds: 0
+  - order:
+    - product: {fileID: 11400000, guid: 349fbd8a3f5bf114b9309c474d68bc6d, type: 2}
+      quantity: 1
+    paymentAmount: 20000
+    patienceSeconds: 0
+  - order:
+    - product: {fileID: 11400000, guid: 9cb2a36cc808b7843a1880f08ed6939f, type: 2}
+      quantity: 1
+    paymentAmount: 10000
+    patienceSeconds: 0
+  shoppingList: []
+  globalTimeLimitSeconds: 0
+  maxAllowedErrors: 0
+  twoStarScore: 70
+  threeStarScore: 100

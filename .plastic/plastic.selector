@@ -1,0 +1,4 @@
+repository "VentaDeBebidas/VentaDeBebidas@4674238998490@cloud"
+  path "/"
+    br "/main"
+    co "/main"
