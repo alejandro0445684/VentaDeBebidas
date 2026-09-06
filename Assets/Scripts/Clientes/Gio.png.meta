@@ -113,11 +113,11 @@ TextureImporter:
       name: Gio_0
       rect:
         serializedVersion: 2
-        x: 15
+        x: 14
         y: 4
         width: 22
         height: 30
-      alignment: 9
+      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -139,7 +139,7 @@ TextureImporter:
         y: 4
         width: 22
         height: 30
-      alignment: 9
+      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -161,7 +161,7 @@ TextureImporter:
         y: 4
         width: 22
         height: 31
-      alignment: 9
+      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -183,7 +183,7 @@ TextureImporter:
         y: 4
         width: 22
         height: 30
-      alignment: 9
+      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -205,7 +205,7 @@ TextureImporter:
         y: 4
         width: 22
         height: 30
-      alignment: 9
+      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -227,7 +227,7 @@ TextureImporter:
         y: 4
         width: 22
         height: 31
-      alignment: 9
+      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -245,11 +245,11 @@ TextureImporter:
       name: Gio_6
       rect:
         serializedVersion: 2
-        x: 303
+        x: 302
         y: 4
         width: 26
         height: 35
-      alignment: 9
+      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -271,7 +271,7 @@ TextureImporter:
         y: 4
         width: 27
         height: 33
-      alignment: 9
+      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -293,7 +293,7 @@ TextureImporter:
         y: 4
         width: 27
         height: 35
-      alignment: 9
+      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -315,7 +315,7 @@ TextureImporter:
         y: 4
         width: 30
         height: 30
-      alignment: 9
+      alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
