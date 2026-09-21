@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1856e84220fbe394cbdf88800d1527d3, type: 3}
+  m_Name: Cliente_01-Data
+  m_EditorClassIdentifier: Assembly-CSharp::ClienteData
+  idCliente: 
+  nombreCliente: 
+  spriteMapa: {fileID: -523548581, guid: 3076362445b2c51488f957891e0c200d, type: 3}
+  animatorControllerMapa: {fileID: 9100000, guid: d9bace6d7cfbc6e4ea4b0128c0cc91fe, type: 2}
+  spriteCajeroFrontal: {fileID: -523548581, guid: 3076362445b2c51488f957891e0c200d, type: 3}
+  animatorControllerCajero: {fileID: 9100000, guid: d580cfabd97534c4581a0d2d74abf39c, type: 2}
+  dialogosPosibles:
+  - "Podr\xEDas cobrarme por favor"
+  - "Esto ser\xEDa todo por hoy"
+  - "Hola, cobrame esto r\xE1pido"
