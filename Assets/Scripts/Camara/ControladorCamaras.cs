@@ -6,25 +6,44 @@ public class ControladorCamaras : MonoBehaviour
     [SerializeField] private GameObject camaraPrincipal; // La cámara inicial (visión general)
     [SerializeField] private GameObject camaraCajero;    // La cámara del mostrador
 
-    [Header("Interfaz del Cajero")]
-    [SerializeField] private GameObject panelVistaCajero;
-    [SerializeField] private Canvas canvasJuego;
+    [Header("Canvas de UI")]
+    [SerializeField] private GameObject canvasJuego;     // El Canvas Principal
+    [SerializeField] private GameObject canvasCajero;    // El nuevo Canvas del Cajero
 
-    // Esta función se activará al presionar el botón
+    [Header("Elementos del Cajero")]
+    [SerializeField] private GameObject panelVistaCajero;
+
+    // Esta función se activará al presionar el botón para IR AL CAJERO
     public void ActivarVistaCajero()
     {
+        // 1. Alternar Cámaras
         if (camaraPrincipal != null && camaraCajero != null)
         {
-            camaraPrincipal.SetActive(false); // Apaga la cámara lejana
-            camaraCajero.SetActive(true);    // Enciende la cámara del cajero
+            camaraPrincipal.SetActive(false);
+            camaraCajero.SetActive(true);
         }
-        if (canvasJuego != null && camaraCajero != null)
-        {
-            canvasJuego.worldCamera = camaraCajero.GetComponent<Camera>();
-        }
+
+        // 2. Encender Canvas del Cajero y Apagar Canvas General (evita pantallas blancas o parpadeos)
+        if (canvasJuego != null) canvasJuego.SetActive(false);
+        if (canvasCajero != null) canvasCajero.SetActive(true);
+
+        // 3. Activar el Panel del Cajero
         if (panelVistaCajero != null)
         {
             panelVistaCajero.SetActive(true);
         }
+    }
+
+    // Esta función sirva para VOLVER a la vista general (por si tienes un botón de regresar)
+    public void VolverAVistaGeneral()
+    {
+        if (camaraPrincipal != null && camaraCajero != null)
+        {
+            camaraPrincipal.SetActive(true);
+            camaraCajero.SetActive(false);
+        }
+
+        if (canvasJuego != null) canvasJuego.SetActive(true);
+        if (canvasCajero != null) canvasCajero.SetActive(false);
     }
 }
