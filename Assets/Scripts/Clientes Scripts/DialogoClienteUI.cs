@@ -18,6 +18,10 @@ public class DialogoClienteUI : MonoBehaviour
     [Header("Componentes de UI")]
     [SerializeField] private GameObject globoTextoObjeto; // Tu objeto GloboUI
     [SerializeField] private TextMeshProUGUI textoDialogo;  // Tu TextoDialogo (TextMeshPro)
+   
+    [Header("Sistema de Preguntas")]
+    [SerializeField] private ControladorPreguntasUI controladorPreguntas;
+    [SerializeField] private PreguntaSO preguntaDeEsteCliente;
 
     [Header("Animación del Cliente")]
     [SerializeField] private Animator animatorClienteFrontal; // Animator del ClienteFrontalUI
@@ -68,5 +72,35 @@ public class DialogoClienteUI : MonoBehaviour
         {
             animatorClienteFrontal.Play(nombreEstadoIdle);
         }
+
+        if (controladorPreguntas != null && preguntaDeEsteCliente != null)
+    {
+        controladorPreguntas.MostrarPregunta(preguntaDeEsteCliente);
     }
+    }
+    // Método público que llamaremos desde ControladorPreguntasUI
+public void ReaccionarARespuesta(string textoRespuesta, string nombreAnimacion)
+{
+    gameObject.SetActive(true);
+    StartCoroutine(RutinaReaccion(textoRespuesta, nombreAnimacion));
+}
+
+private IEnumerator RutinaReaccion(string textoRespuesta, string nombreAnimacion)
+{
+    // 1. Mostrar el mensaje y la animación
+    if (textoDialogo != null) textoDialogo.text = textoRespuesta;
+    if (globoTextoObjeto != null) globoTextoObjeto.SetActive(true);
+
+    if (animatorClienteFrontal != null && !string.IsNullOrEmpty(nombreAnimacion))
+    {
+        animatorClienteFrontal.Play(nombreAnimacion);
+    }
+
+    // 2. Esperar los segundos del mensaje
+    yield return new WaitForSeconds(duracionMensaje);
+
+    // 3. Apagar el globo
+    if (globoTextoObjeto != null) globoTextoObjeto.SetActive(false);
+
+}
 }
