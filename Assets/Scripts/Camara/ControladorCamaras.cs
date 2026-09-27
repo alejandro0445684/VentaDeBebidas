@@ -5,6 +5,7 @@ public class ControladorCamaras : MonoBehaviour
     [Header("Cámaras del Juego")]
     [SerializeField] private GameObject camaraPrincipal; // La cámara inicial (visión general)
     [SerializeField] private GameObject camaraCajero;    // La cámara del mostrador
+    [SerializeField] private GameObject camara2doCliente; // Camara del segundo cliente
 
     [Header("Canvas de UI")]
     [SerializeField] private GameObject canvasJuego;     // El Canvas Principal

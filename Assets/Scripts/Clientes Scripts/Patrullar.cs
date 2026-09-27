@@ -1,61 +1,77 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Patrullar : MonoBehaviour
 {
-[SerializeField] private float velocidadMovimiento;
+    [SerializeField] private float velocidadMovimiento = 2f;
+    [SerializeField] private Transform[] puntosMovimiento;
+    [SerializeField] private float distanciaMinima = 0.2f;
+    [SerializeField] private GameObject botonPerspectiva;
 
-[SerializeField] private Transform[] puntosMovimiento;
+    private int indicePuntoActual = 0;
+    private SpriteRenderer spriteRenderer;
 
-[SerializeField] private float distanciaMinima;
-
-[SerializeField] private GameObject botonPerspectiva;
-
-private int numeroAleatorio;
-
-private SpriteRenderer spriteRenderer;
-
-private void Start()
-{
-    if (puntosMovimiento == null || puntosMovimiento.Length == 0)return;
-    numeroAleatorio = Random.Range(0, puntosMovimiento.Length);
-    spriteRenderer = GetComponent<SpriteRenderer>();
-    Girar();
-}
-
-private void Update()
-{
-    if (puntosMovimiento == null || puntosMovimiento.Length == 0)return;
-    if(puntosMovimiento[numeroAleatorio] == null) return;
-    
-    transform.position = Vector2.MoveTowards(transform.position, puntosMovimiento[numeroAleatorio].position, velocidadMovimiento * Time.deltaTime);
-
-    if (Vector2.Distance(transform.position, puntosMovimiento[numeroAleatorio].position) < distanciaMinima)
+    private void Awake()
     {
-        if(numeroAleatorio < puntosMovimiento.Length - 1)
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+    }
+
+    private void OnEnable()
+    {
+        // Al activarse el objeto o panel, siempre empieza desde el punto 0
+        indicePuntoActual = 0;
+        Girar();
+    }
+
+    private void Update()
+    {
+        if (puntosMovimiento != null && puntosMovimiento.Length > 0 && puntosMovimiento[indicePuntoActual] != null)
+    {
+        Debug.DrawLine(transform.position, puntosMovimiento[indicePuntoActual].position, Color.red);
+        
+        Debug.Log($"[DATOS] Cliente está en: {transform.position} | El Punto [{indicePuntoActual}] ({puntosMovimiento[indicePuntoActual].name}) está en: {puntosMovimiento[indicePuntoActual].position}");
+    }
+
+        if (puntosMovimiento == null || puntosMovimiento.Length == 0) return;
+        if (puntosMovimiento[indicePuntoActual] == null) return;
+
+        // Movimiento directo hacia el punto actual
+        transform.position = Vector3.MoveTowards(
+            transform.position, 
+            puntosMovimiento[indicePuntoActual].position, 
+            velocidadMovimiento * Time.deltaTime
+        );
+
+        // Comprueba si llegó al punto
+        if (Vector3.Distance(transform.position, puntosMovimiento[indicePuntoActual].position) < distanciaMinima)
+        {
+            if (indicePuntoActual < puntosMovimiento.Length - 1)
             {
-                numeroAleatorio++;
+                indicePuntoActual++;
+                Girar();
             }
             else
             {
-                if (botonPerspectiva != null) botonPerspectiva.SetActive (true);
+                // Llegó al último punto: activa el botón y detiene el patrullaje
+                if (botonPerspectiva != null) 
+                {
+                    botonPerspectiva.SetActive(true);
+                }
                 this.enabled = false;
             }
+        }
     }
 
-}
-
-private void Girar()
+    private void Girar()
     {
-        if(transform.position.x < puntosMovimiento[numeroAleatorio].position.x)
+        if (spriteRenderer == null)
         {
-            spriteRenderer.flipX = true;
+            spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         }
-        else
+
+        if (spriteRenderer != null && puntosMovimiento != null && indicePuntoActual < puntosMovimiento.Length && puntosMovimiento[indicePuntoActual] != null)
         {
-            spriteRenderer.flipX = false;
+            // Apunta la mirada según la dirección del siguiente punto
+            spriteRenderer.flipX = transform.position.x < puntosMovimiento[indicePuntoActual].position.x;
         }
     }
-    
 }

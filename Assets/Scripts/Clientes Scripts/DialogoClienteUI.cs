@@ -30,6 +30,7 @@ public class DialogoClienteUI : MonoBehaviour
     [SerializeField] private float duracionMensaje = 3.5f;
     [SerializeField] private string nombreEstadoHablar = "Hablar";
     [SerializeField] private string nombreEstadoIdle = "Idle";
+    
 
     private void OnEnable()
     {

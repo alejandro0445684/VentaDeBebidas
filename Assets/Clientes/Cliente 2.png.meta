@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3076362445b2c51488f957891e0c200d
+guid: 929b677f562baed4fb29e4cc6a374b6f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,11 +97,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cliente 1_0
+      name: Cliente 2_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 46
+        x: 12
+        y: 8
         width: 24
         height: 31
       alignment: 0
@@ -112,18 +112,128 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ded234cfb4ef98f4f9c5ccd5a3b8d37d
-      internalID: -1315433925
+      spriteID: d2b0c363acbe4a84ba47e746d759a8e2
+      internalID: 1731488993
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cliente 1_1
+      name: Cliente 2_1
       rect:
         serializedVersion: 2
-        x: 51
-        y: 46
+        x: 60
+        y: 8
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73168b46207809a41999b5b1bfb0bf13
+      internalID: 764700335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliente 2_2
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 8
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dace65e1af1b37444894726e600bb141
+      internalID: -527170447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliente 2_3
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 8
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aab66ff33205d1428b971c731c2e7d2
+      internalID: 737625777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliente 2_4
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 8
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baed078d4a6065348bcac742159cd14e
+      internalID: 583056410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliente 2_5
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 8
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 648f7659f4fca144fa707ab64758e71b
+      internalID: 1270952462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cliente 2_6
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 8
         width: 24
         height: 32
       alignment: 0
@@ -134,18 +244,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a00582c0e731493479321a24ba61345f
-      internalID: -1958736716
+      spriteID: a1973b4eedebf26448998bcaaacb64ed
+      internalID: -437404654
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cliente 1_2
+      name: Cliente 2_7
       rect:
         serializedVersion: 2
-        x: 93
-        y: 46
+        x: 348
+        y: 8
         width: 24
         height: 31
       alignment: 0
@@ -156,184 +266,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42939b0f6e045dd4a9a122be0d5eaf05
-      internalID: -88704512
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cliente 1_3
-      rect:
-        serializedVersion: 2
-        x: 135
-        y: 46
-        width: 24
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: df332a9fded94af42bf7b240c3bd865f
-      internalID: -1327626846
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cliente 1_4
-      rect:
-        serializedVersion: 2
-        x: 177
-        y: 46
-        width: 24
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 61a51b9c32227724aaf7110c8b079984
-      internalID: 1569982127
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cliente 1_5
-      rect:
-        serializedVersion: 2
-        x: 219
-        y: 46
-        width: 24
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ed01c75d66e08f0428018a5d9e60178d
-      internalID: 1545433427
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cliente 1_6
-      rect:
-        serializedVersion: 2
-        x: 261
-        y: 46
-        width: 24
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2c25d1b6db1500a47873bc3975e8df12
-      internalID: -523548581
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cliente 1_7
-      rect:
-        serializedVersion: 2
-        x: 303
-        y: 46
-        width: 24
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 643d54caab60d9841b85288f9d351e11
-      internalID: 1865983560
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cliente 1_8
-      rect:
-        serializedVersion: 2
-        x: 342
-        y: 44
-        width: 30
-        height: 35
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fc620906ed3b4394bac9f29723f1e6de
-      internalID: 1342340824
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cliente 1_9
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 44
-        width: 30
-        height: 35
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 70c8806bb7006604bbfa991f956da643
-      internalID: -1891634426
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cliente 1_10
-      rect:
-        serializedVersion: 2
-        x: 6
-        y: 2
-        width: 30
-        height: 35
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1203b133d1d86924a8bce3b788b44d1d
-      internalID: 1607416122
+      spriteID: 77e00a21c1015fe4dbfab285529dc209
+      internalID: 144736955
       vertices: []
       indices: 
       edges: []
@@ -342,7 +276,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 26699dce643900b4ba7bd5c0adc0e806
+    spriteID: a4a6ac89ea47765468b2b45c9c4f3e7c
     internalID: 0
     vertices: []
     indices: 
@@ -354,17 +288,14 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Cliente 1_0: -1315433925
-      Cliente 1_1: -1958736716
-      Cliente 1_10: 1607416122
-      Cliente 1_2: -88704512
-      Cliente 1_3: -1327626846
-      Cliente 1_4: 1569982127
-      Cliente 1_5: 1545433427
-      Cliente 1_6: -523548581
-      Cliente 1_7: 1865983560
-      Cliente 1_8: 1342340824
-      Cliente 1_9: -1891634426
+      Cliente 2_0: 1731488993
+      Cliente 2_1: 764700335
+      Cliente 2_2: -527170447
+      Cliente 2_3: 737625777
+      Cliente 2_4: 583056410
+      Cliente 2_5: 1270952462
+      Cliente 2_6: -437404654
+      Cliente 2_7: 144736955
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

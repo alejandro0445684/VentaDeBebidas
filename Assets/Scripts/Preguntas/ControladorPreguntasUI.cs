@@ -1,3 +1,4 @@
+using System.Collections; // ¡NECESARIO PARA LAS CORRUTINAS!
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -6,6 +7,7 @@ public class ControladorPreguntasUI : MonoBehaviour
 {
     [Header("Panel Principal")]
     [SerializeField] private GameObject panelPregunta;
+    [SerializeField] private GameObject botonIrAEntradaCliente2;
     [SerializeField] private TextMeshProUGUI textoEnunciado;
 
     [Header("Botones de Opciones")]
@@ -22,6 +24,10 @@ public class ControladorPreguntasUI : MonoBehaviour
         // Al iniciar el juego, nos aseguramos de que el panel esté oculto
         if (panelPregunta != null)
             panelPregunta.SetActive(false);
+
+        // También ocultamos el botón del 2do cliente al iniciar
+        if (botonIrAEntradaCliente2 != null)
+            botonIrAEntradaCliente2.SetActive(false);
     }
 
     // Esta función la llamará el diálogo del cliente al terminar de hablar
@@ -55,12 +61,19 @@ public class ControladorPreguntasUI : MonoBehaviour
         if (indiceSeleccionado == preguntaActual.indiceCorrecto)
         {
             Debug.Log("¡RESPUESTA CORRECTA! El cliente pagó correctamente.");
-            // Aquí podrás sumar dinero, reproducir sonido de éxito, etc.
-        // Si la respuesta es correcta, hacemos hablar al cliente
+
+            // Hacemos hablar al cliente con su reacción correcta
             if (dialogoCliente != null)
             {
                 dialogoCliente.ReaccionarARespuesta(preguntaActual.dialogoCorrecto, preguntaActual.animacionCorrecto);
             }
+
+            // Ocultamos el panel de preguntas para que no estorbe la pantalla
+            if (panelPregunta != null)
+                panelPregunta.SetActive(false);
+
+            // Iniciamos la espera de 3.5 segundos para mostrar el botón
+            StartCoroutine(TransicionSiguienteCliente());
         }
         else
         {
@@ -71,10 +84,22 @@ public class ControladorPreguntasUI : MonoBehaviour
             {
                 dialogoCliente.ReaccionarARespuesta(preguntaActual.dialogoIncorrecto, preguntaActual.animacionIncorrecto);
             }
-        }
 
-        // Ocultamos el panel tras responder
-         panelPregunta.SetActive(false);
+            // En caso de error, también ocultamos la pregunta
+            if (panelPregunta != null)
+                panelPregunta.SetActive(false);
+        }
     }
-    
+
+    private IEnumerator TransicionSiguienteCliente()
+    {
+        // Esperamos 3.5 segundos mientras se reproduce el diálogo/reacción
+        yield return new WaitForSeconds(3.5f);
+
+        // Mostramos el botón que lleva a la entrada del cliente 2
+        if (botonIrAEntradaCliente2 != null)
+        {
+            botonIrAEntradaCliente2.SetActive(true);
+        }
+    }
 }
