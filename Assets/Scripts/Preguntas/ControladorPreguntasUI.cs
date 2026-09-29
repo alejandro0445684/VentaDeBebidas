@@ -1,4 +1,4 @@
-using System.Collections; // ¡NECESARIO PARA LAS CORRUTINAS!
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -11,8 +11,8 @@ public class ControladorPreguntasUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI textoEnunciado;
 
     [Header("Botones de Opciones")]
-    [SerializeField] private Button[] botonesOpciones; // Deben ser 4 botones
-    [SerializeField] private TextMeshProUGUI[] textosOpciones; // Los 4 textos de los botones
+    [SerializeField] private Button[] botonesOpciones;
+    [SerializeField] private TextMeshProUGUI[] textosOpciones;
 
     [Header("Referencias externas")]
     [SerializeField] private DialogoClienteUI dialogoCliente;
@@ -21,85 +21,62 @@ public class ControladorPreguntasUI : MonoBehaviour
 
     private void Start()
     {
-        // Al iniciar el juego, nos aseguramos de que el panel esté oculto
-        if (panelPregunta != null)
-            panelPregunta.SetActive(false);
-
-        // También ocultamos el botón del 2do cliente al iniciar
-        if (botonIrAEntradaCliente2 != null)
-            botonIrAEntradaCliente2.SetActive(false);
+        if (panelPregunta != null) panelPregunta.SetActive(false);
+        if (botonIrAEntradaCliente2 != null) botonIrAEntradaCliente2.SetActive(false);
     }
 
-    // Esta función la llamará el diálogo del cliente al terminar de hablar
-    public void MostrarPregunta(PreguntaSO nuevaPregunta)
+    // Esta función recibe la pregunta específica que le mande el cliente
+    public void MostrarPregunta(PreguntaSO preguntaDelCliente)
     {
-        if (nuevaPregunta == null) return;
+        if (preguntaDelCliente == null)
+        {
+            Debug.LogWarning("El cliente no entregó ninguna pregunta.");
+            return;
+        }
 
-        preguntaActual = nuevaPregunta;
+        preguntaActual = preguntaDelCliente;
         panelPregunta.SetActive(true);
         textoEnunciado.ForceMeshUpdate();
 
-        // 1. Asignamos los textos
+        // Asignamos el enunciado y las opciones
         textoEnunciado.text = preguntaActual.enunciado;
-        textosOpciones[0].text = "A) " + preguntaActual.opcionA;
-        textosOpciones[1].text = "B) " + preguntaActual.opcionB;
-        textosOpciones[2].text = "C) " + preguntaActual.opcionC;
-        textosOpciones[3].text = "D) " + preguntaActual.opcionD;
+        if (textosOpciones.Length > 0) textosOpciones[0].text = "A) " + preguntaActual.opcionA;
+        if (textosOpciones.Length > 1) textosOpciones[1].text = "B) " + preguntaActual.opcionB;
+        if (textosOpciones.Length > 2) textosOpciones[2].text = "C) " + preguntaActual.opcionC;
+        if (textosOpciones.Length > 3) textosOpciones[3].text = "D) " + preguntaActual.opcionD;
 
-        // 2. Asignamos la acción a cada botón automáticamente
         for (int i = 0; i < botonesOpciones.Length; i++)
         {
-            int indice = i; // Guardamos la variable local para el click
+            int indice = i;
             botonesOpciones[i].onClick.RemoveAllListeners();
             botonesOpciones[i].onClick.AddListener(() => Responder(indice));
         }
     }
 
-    // Comprueba si la opción presionada es la correcta
     public void Responder(int indiceSeleccionado)
     {
+        if (preguntaActual == null) return;
+
         if (indiceSeleccionado == preguntaActual.indiceCorrecto)
         {
-            Debug.Log("¡RESPUESTA CORRECTA! El cliente pagó correctamente.");
-
-            // Hacemos hablar al cliente con su reacción correcta
             if (dialogoCliente != null)
-            {
                 dialogoCliente.ReaccionarARespuesta(preguntaActual.dialogoCorrecto, preguntaActual.animacionCorrecto);
-            }
 
-            // Ocultamos el panel de preguntas para que no estorbe la pantalla
-            if (panelPregunta != null)
-                panelPregunta.SetActive(false);
-
-            // Iniciamos la espera de 3.5 segundos para mostrar el botón
+            if (panelPregunta != null) panelPregunta.SetActive(false);
             StartCoroutine(TransicionSiguienteCliente());
         }
         else
         {
-            Debug.Log("RESPUESTA INCORRECTA! El cliente se quejó.");
-            
-            // Si es incorrecta, dice el diálogo de queja/error
             if (dialogoCliente != null)
-            {
                 dialogoCliente.ReaccionarARespuesta(preguntaActual.dialogoIncorrecto, preguntaActual.animacionIncorrecto);
-            }
 
-            // En caso de error, también ocultamos la pregunta
-            if (panelPregunta != null)
-                panelPregunta.SetActive(false);
+            if (panelPregunta != null) panelPregunta.SetActive(false);
         }
     }
 
     private IEnumerator TransicionSiguienteCliente()
     {
-        // Esperamos 3.5 segundos mientras se reproduce el diálogo/reacción
         yield return new WaitForSeconds(3.5f);
-
-        // Mostramos el botón que lleva a la entrada del cliente 2
-        if (botonIrAEntradaCliente2 != null)
-        {
-            botonIrAEntradaCliente2.SetActive(true);
-        }
+        if (botonIrAEntradaCliente2 != null) botonIrAEntradaCliente2.SetActive(true);
     }
 }
