@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 574adce3f0489c942a5f0b16a506a0f6, type: 3}
-  m_Name: Pregunta_01
+  m_Name: Pregunta Gran Tazon
   m_EditorClassIdentifier: Assembly-CSharp::PreguntaSO
   enunciado: "El cliente pago con un billete de 50.000 Gs \xBFCuanto deberia ser
     su vuelto?"
@@ -18,7 +18,7 @@ MonoBehaviour:
   opcionB: 15.000 Gs
   opcionC: 35.000 Gs
   opcionD: 10.000 Gs
-  indiceCorrecto: 2
+  indiceCorrecto: 3
   dialogoCorrecto: "\xA1Muchas gracias! Es justo lo que buscaba."
   dialogoIncorrecto: Mm... creo que ese no es el precio correcto.
   animacionCorrecto: Hablar
