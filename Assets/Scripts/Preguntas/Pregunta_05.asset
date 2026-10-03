@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 574adce3f0489c942a5f0b16a506a0f6, type: 3}
   m_Name: Pregunta_05
   m_EditorClassIdentifier: Assembly-CSharp::PreguntaSO
-  enunciado: 
-  opcionA: 
-  opcionB: 
-  opcionC: 
-  opcionD: 
+  enunciado: "\xBFCuanto es el total a cobrar?"
+  opcionA: 6.500 Gs
+  opcionB: 4.000 Gs
+  opcionC: 10.000 Gs
+  opcionD: 3.000 Gs
   indiceCorrecto: 0
   dialogoCorrecto: "\xA1Muchas gracias! Es justo lo que buscaba."
   dialogoIncorrecto: Mm... creo que ese no es el precio correcto.
