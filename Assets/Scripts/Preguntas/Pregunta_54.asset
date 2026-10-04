@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 574adce3f0489c942a5f0b16a506a0f6, type: 3}
-  m_Name: Pregunta_42
+  m_Name: Pregunta_54
   m_EditorClassIdentifier: Assembly-CSharp::PreguntaSO
-  enunciado: 
-  opcionA: 
-  opcionB: 
-  opcionC: 
-  opcionD: 
-  indiceCorrecto: 0
+  enunciado: "\xBFCual es el precio final, si un tazon tiene 80% de descuento?"
+  opcionA: 88.500 Gs
+  opcionB: 88.000 Gs
+  opcionC: 88.550 Gs
+  opcionD: 87.750 Gs
+  indiceCorrecto: 1
   dialogoCorrecto: "\xA1Muchas gracias! Es justo lo que buscaba."
   dialogoIncorrecto: Hm... creo que ese no es el precio correcto.
   animacionCorrecto: Hablar

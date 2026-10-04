@@ -414,6 +414,9 @@ MonoBehaviour:
   - {fileID: 1821575228}
   - {fileID: 664837855}
   dialogoCliente: {fileID: 1492579566}
+  tiempoMaximo: 300
+  textoTemporizador: {fileID: 0}
+  panelGameOver: {fileID: 0}
 --- !u!1 &155419727
 GameObject:
   m_ObjectHideFlags: 0
@@ -873,7 +876,8 @@ MonoBehaviour:
   globoTextoObjeto: {fileID: 234889249}
   textoDialogo: {fileID: 1067783050}
   controladorPreguntas: {fileID: 451107887}
-  preguntaDeEsteCliente: {fileID: 11400000, guid: 4e8e8fce311b24840ae8cddf2276a5bb, type: 2}
+  preguntaDeEsteCliente:
+  - {fileID: 11400000, guid: 4e8e8fce311b24840ae8cddf2276a5bb, type: 2}
   animatorClienteFrontal: {fileID: 1157796986}
   duracionMensaje: 3.5
   nombreEstadoHablar: Hablar
@@ -1613,7 +1617,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000091553, y: 110}
+  m_AnchoredPosition: {x: 0.000091553, y: 125}
   m_SizeDelta: {x: 400, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &336322676
@@ -2274,6 +2278,9 @@ MonoBehaviour:
   - {fileID: 597448673}
   - {fileID: 243402745}
   dialogoCliente: {fileID: 234889250}
+  tiempoMaximo: 300
+  textoTemporizador: {fileID: 0}
+  panelGameOver: {fileID: 0}
 --- !u!1 &493495491
 GameObject:
   m_ObjectHideFlags: 0
@@ -6000,7 +6007,8 @@ MonoBehaviour:
   globoTextoObjeto: {fileID: 1492579565}
   textoDialogo: {fileID: 696675752}
   controladorPreguntas: {fileID: 145678567}
-  preguntaDeEsteCliente: {fileID: 11400000, guid: 791e26ea1184d4849a26c07d6f841527, type: 2}
+  preguntaDeEsteCliente:
+  - {fileID: 11400000, guid: 791e26ea1184d4849a26c07d6f841527, type: 2}
   animatorClienteFrontal: {fileID: 788771425}
   duracionMensaje: 3.5
   nombreEstadoHablar: Hablar

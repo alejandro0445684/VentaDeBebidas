@@ -2664,7 +2664,8 @@ MonoBehaviour:
   globoTextoObjeto: {fileID: 630757232}
   textoDialogo: {fileID: 1794683893}
   controladorPreguntas: {fileID: 1208533907}
-  preguntaDeEsteCliente: {fileID: 11400000, guid: e34569c0131b862418762bac2529a02a, type: 2}
+  preguntaDeEsteCliente:
+  - {fileID: 11400000, guid: e34569c0131b862418762bac2529a02a, type: 2}
   animatorClienteFrontal: {fileID: 807508424}
   duracionMensaje: 3.5
   nombreEstadoHablar: Hablar
@@ -4149,6 +4150,9 @@ MonoBehaviour:
   - {fileID: 1265417313}
   - {fileID: 729992218}
   dialogoCliente: {fileID: 630757233}
+  tiempoMaximo: 300
+  textoTemporizador: {fileID: 0}
+  panelGameOver: {fileID: 0}
 --- !u!1 &1214248104
 GameObject:
   m_ObjectHideFlags: 0
@@ -6042,7 +6046,8 @@ MonoBehaviour:
   globoTextoObjeto: {fileID: 1661280855}
   textoDialogo: {fileID: 1241240969}
   controladorPreguntas: {fileID: 1718805422}
-  preguntaDeEsteCliente: {fileID: 11400000, guid: bd5e7273236cd5a4b95f0d9d974e5e5d, type: 2}
+  preguntaDeEsteCliente:
+  - {fileID: 11400000, guid: bd5e7273236cd5a4b95f0d9d974e5e5d, type: 2}
   animatorClienteFrontal: {fileID: 1829963908}
   duracionMensaje: 3.5
   nombreEstadoHablar: Hablar
@@ -6430,6 +6435,9 @@ MonoBehaviour:
   - {fileID: 117711820}
   - {fileID: 303809049}
   dialogoCliente: {fileID: 1661280856}
+  tiempoMaximo: 300
+  textoTemporizador: {fileID: 0}
+  panelGameOver: {fileID: 0}
 --- !u!1 &1771401912
 GameObject:
   m_ObjectHideFlags: 0

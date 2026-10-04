@@ -20,7 +20,7 @@ public class DialogoClienteUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI textoDialogo;
 
     [Header("Sistema de Preguntas")]
-    [SerializeField] private ControladorPreguntasUI controladorPreguntas;
+    [SerializeField] private MonoBehaviour controladorPreguntas;
     [SerializeField] private PreguntaSO[] preguntaDeEsteCliente;
 
     [Header("Animación del Cliente")]
@@ -69,8 +69,16 @@ public class DialogoClienteUI : MonoBehaviour
         // Iniciamos la trivia una vez que el cliente termina su saludo inicial
         if (controladorPreguntas != null && preguntaDeEsteCliente != null)
         {
-            controladorPreguntas.MostrarPreguntas(preguntaDeEsteCliente);
+            if (controladorPreguntas is ControladorPreguntas20sUI controlador20)
+            {
+                controlador20.MostrarPreguntas(preguntaDeEsteCliente);
+            }
+            else if (controladorPreguntas is ControladorPreguntasUI controlador30)
+            {
+                controlador30.MostrarPreguntas(preguntaDeEsteCliente);
+            }
         }
+        
     }
 
     public void ReaccionarARespuesta(string textoRespuesta, string nombreAnimacion)

@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 574adce3f0489c942a5f0b16a506a0f6, type: 3}
-  m_Name: Pregunta_48
+  m_Name: Pregunta_51
   m_EditorClassIdentifier: Assembly-CSharp::PreguntaSO
-  enunciado: "\xBFCual es el precio a pagar con un descuento del 50%?"
-  opcionA: 10.550 Gs
-  opcionB: 11.750 Gs
-  opcionC: 11.500 Gs
-  opcionD: 10.750 Gs
+  enunciado: "El Cliente pago con un billete de 10 mil Gs, dos de 5 mil Gs, y uno
+    de 20 mil Gs \xBFCuanto le falta para completar el valor?"
+  opcionA: 8.750 Gs
+  opcionB: 8.570 Gs
+  opcionC: 8.000 Gs
+  opcionD: 8.500 Gs
   indiceCorrecto: 3
   dialogoCorrecto: "\xA1Muchas gracias! Es justo lo que buscaba."
   dialogoIncorrecto: Hm... creo que ese no es el precio correcto.
