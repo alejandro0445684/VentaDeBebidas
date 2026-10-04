@@ -715,6 +715,9 @@ MonoBehaviour:
   - {fileID: 2105969138}
   - {fileID: 871641889}
   dialogoCliente: {fileID: 1921020321}
+  tiempoMaximo: 30
+  textoTemporizador: {fileID: 0}
+  panelGameOver: {fileID: 0}
 --- !u!1 &61270627
 GameObject:
   m_ObjectHideFlags: 0
@@ -3629,6 +3632,9 @@ MonoBehaviour:
   - {fileID: 2046629972}
   - {fileID: 20309272}
   dialogoCliente: {fileID: 751577763}
+  tiempoMaximo: 30
+  textoTemporizador: {fileID: 0}
+  panelGameOver: {fileID: 0}
 --- !u!1 &841449903
 GameObject:
   m_ObjectHideFlags: 0
