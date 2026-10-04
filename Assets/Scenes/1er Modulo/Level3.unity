@@ -1219,7 +1219,10 @@ MonoBehaviour:
   globoTextoObjeto: {fileID: 336906598}
   textoDialogo: {fileID: 1413831487}
   controladorPreguntas: {fileID: 1533106663}
-  preguntaDeEsteCliente: {fileID: 11400000, guid: de63132104f513f46ab7ce217ca7bdcb, type: 2}
+  preguntaDeEsteCliente:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   animatorClienteFrontal: {fileID: 994869824}
   duracionMensaje: 3.5
   nombreEstadoHablar: Hablar
@@ -3468,7 +3471,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Level2
+          m_StringArgument: Level4
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &718244623
@@ -5720,6 +5723,9 @@ MonoBehaviour:
   - {fileID: 60351972}
   - {fileID: 1608115150}
   dialogoCliente: {fileID: 1839096019}
+  tiempoMaximo: 30
+  textoTemporizador: {fileID: 0}
+  panelGameOver: {fileID: 0}
 --- !u!1 &1299589555
 GameObject:
   m_ObjectHideFlags: 0
@@ -7221,6 +7227,9 @@ MonoBehaviour:
   - {fileID: 443100059}
   - {fileID: 1164645489}
   dialogoCliente: {fileID: 336906599}
+  tiempoMaximo: 30
+  textoTemporizador: {fileID: 0}
+  panelGameOver: {fileID: 0}
 --- !u!1 &1574460377
 GameObject:
   m_ObjectHideFlags: 0
@@ -8638,7 +8647,10 @@ MonoBehaviour:
   globoTextoObjeto: {fileID: 1839096018}
   textoDialogo: {fileID: 299497708}
   controladorPreguntas: {fileID: 1290785609}
-  preguntaDeEsteCliente: {fileID: 11400000, guid: fc08a5db1f1772846b3971fc637a2c55, type: 2}
+  preguntaDeEsteCliente:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   animatorClienteFrontal: {fileID: 626997336}
   duracionMensaje: 3.5
   nombreEstadoHablar: Hablar

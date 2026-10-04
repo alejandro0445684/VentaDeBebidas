@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 574adce3f0489c942a5f0b16a506a0f6, type: 3}
   m_Name: Pregunta_59
   m_EditorClassIdentifier: Assembly-CSharp::PreguntaSO
-  enunciado: 
-  opcionA: 
-  opcionB: 
-  opcionC: 
-  opcionD: 
-  indiceCorrecto: 0
+  enunciado: "El cliente pago con un billete de 50 mil Gs \xBFCuanto es el vuelto?"
+  opcionA: 27.000 Gs
+  opcionB: 27.500 Gs
+  opcionC: 27.750 Gs
+  opcionD: 28.000 Gs
+  indiceCorrecto: 3
   dialogoCorrecto: "\xA1Muchas gracias! Es justo lo que buscaba."
   dialogoIncorrecto: Hm... creo que ese no es el precio correcto.
   animacionCorrecto: Hablar

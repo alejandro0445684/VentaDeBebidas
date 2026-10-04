@@ -9,12 +9,87 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: a36c5720388289648a4d0beacba03ae6
   - enabled: 1
-    path: Assets/Scenes/Gameplay.unity
-    guid: 1e5271dcb3d83f6438280ee87a1f586b
-  - enabled: 1
     path: Assets/Scenes/1er Modulo/Level1.unity
     guid: aa5e66e3162d63b45a74418c8d729ce8
   - enabled: 1
     path: Assets/Scenes/Level Panels.unity
     guid: 0ec3283c4f64694438f1f5c761a2d126
+  - enabled: 1
+    path: Assets/Scenes/1er Modulo/Level2.unity
+    guid: 845a6be897d27cd47a26ad7926c5415e
+  - enabled: 1
+    path: Assets/Scenes/1er Modulo/Level3.unity
+    guid: 838866c9039df1e43b80f4a331813a8c
+  - enabled: 1
+    path: Assets/Scenes/1er Modulo/Level4.unity
+    guid: 90ae7e9b524aa334b83068971c032c24
+  - enabled: 1
+    path: Assets/Scenes/1er Modulo/Level5.unity
+    guid: e5776f54eace0304ba3499e7b4e3aec8
+  - enabled: 1
+    path: Assets/Scenes/1er Modulo/Level6.unity
+    guid: c34e9a60b8d517a4799e677c81da8b8c
+  - enabled: 1
+    path: Assets/Scenes/1er Modulo/Level7.unity
+    guid: 34292734c00188043846c66418507959
+  - enabled: 1
+    path: Assets/Scenes/1er Modulo/Level8.unity
+    guid: c77cbfdf49560f24592f0e29911ea2c8
+  - enabled: 1
+    path: Assets/Scenes/1er Modulo/Level9.unity
+    guid: 43c28088d43531a4c83cf3963bc11ff2
+  - enabled: 1
+    path: Assets/Scenes/2do Modulo/Level10.unity
+    guid: e56177cff843a5649b80b25507bcd5e5
+  - enabled: 1
+    path: Assets/Scenes/2do Modulo/Level11.unity
+    guid: 8b745e64299484241bf35c6574a8d09b
+  - enabled: 1
+    path: Assets/Scenes/2do Modulo/Level12.unity
+    guid: be0c28df7431ba1468d042d8b9b450db
+  - enabled: 1
+    path: Assets/Scenes/2do Modulo/Level13.unity
+    guid: 9c54f5a5119f0ca4e8c5dd531ff75db7
+  - enabled: 1
+    path: Assets/Scenes/2do Modulo/Level15.unity
+    guid: 71c3eb7a2f60e8242bfc20619a73de10
+  - enabled: 1
+    path: Assets/Scenes/2do Modulo/Level14.unity
+    guid: ff0663e2a522a364e916cfb66cf6e401
+  - enabled: 1
+    path: Assets/Scenes/2do Modulo/Level18.unity
+    guid: c3dbffbca4cabdd4a9274fbc33746c30
+  - enabled: 1
+    path: Assets/Scenes/2do Modulo/Level17.unity
+    guid: d4e347b6af17f084b8ce8c8d9f745330
+  - enabled: 1
+    path: Assets/Scenes/2do Modulo/Level16.unity
+    guid: 330516e21cc8bf64e8a548838c1eec58
+  - enabled: 1
+    path: Assets/Scenes/3er Modulo/Level26.unity
+    guid: 31fa305ecb8a0754694d88659b860479
+  - enabled: 1
+    path: Assets/Scenes/3er Modulo/Level24.unity
+    guid: d61acfd41e345244e9bfce51b9f3dfbe
+  - enabled: 1
+    path: Assets/Scenes/3er Modulo/Level23.unity
+    guid: 3e7d1ccd34b771b4eb6cd93b0ca5cd19
+  - enabled: 1
+    path: Assets/Scenes/3er Modulo/Level22.unity
+    guid: cdac88618985dfc4689783d2a16996a8
+  - enabled: 1
+    path: Assets/Scenes/3er Modulo/Level21.unity
+    guid: 46d9a505b8cac1f4f80c27a456d3be12
+  - enabled: 1
+    path: Assets/Scenes/3er Modulo/Level20.unity
+    guid: ac70d337b9be3e7428e36387f9a06262
+  - enabled: 1
+    path: Assets/Scenes/3er Modulo/Level19.unity
+    guid: f5e796bc2486ffe4db5ef1c1a0b040d8
+  - enabled: 1
+    path: Assets/Scenes/3er Modulo/Level27.unity
+    guid: 8dca671578ab1394ca9877461a0c4561
+  - enabled: 1
+    path: Assets/Scenes/3er Modulo/Level25.unity
+    guid: 3ebdf04e97623fa43a39fa386d1f165e
   m_configObjects: {}
