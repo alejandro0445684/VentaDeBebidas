@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 574adce3f0489c942a5f0b16a506a0f6, type: 3}
+  m_Name: Pregunta_67
+  m_EditorClassIdentifier: Assembly-CSharp::PreguntaSO
+  enunciado: "El cliente pago con un billete de 50 mil Gs, y uno de 20 mil Gs \xBFCuanto
+    le falta para completar el total a pagar?"
+  opcionA: 1.750 Gs
+  opcionB: 1.850 Gs
+  opcionC: 1.785 Gs
+  opcionD: 1.800 Gs
+  indiceCorrecto: 3
+  dialogoCorrecto: "\xA1Muchas gracias! Es justo lo que buscaba."
+  dialogoIncorrecto: Hm... creo que ese no es el precio correcto.
+  animacionCorrecto: Hablar
+  animacionIncorrecto: Hablar
