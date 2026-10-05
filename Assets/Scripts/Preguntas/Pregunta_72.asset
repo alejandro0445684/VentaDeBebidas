@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 574adce3f0489c942a5f0b16a506a0f6, type: 3}
-  m_Name: Pregunta_69
+  m_Name: Pregunta_72
   m_EditorClassIdentifier: Assembly-CSharp::PreguntaSO
-  enunciado: "Al tener un descuento de -5.000 Gs todo junto \xBFCuanto es el total
-    a pagar?"
-  opcionA: 23.000 Gs
-  opcionB: 21.000 Gs
-  opcionC: 28.000 Gs
-  opcionD: 25.000 Gs
-  indiceCorrecto: 1
+  enunciado: "El cliente pago con un billete de 50 mil y uno de 10 mil Gs \xBFCuanto
+    es su vuelto?"
+  opcionA: 1.000 Gs
+  opcionB: 10.000 Gs
+  opcionC: No hay vuelto
+  opcionD: 12.050 Gs
+  indiceCorrecto: 2
   dialogoCorrecto: "\xA1Muchas gracias! Es justo lo que buscaba."
   dialogoIncorrecto: Hm... creo que ese no es el precio correcto.
   animacionCorrecto: Hablar
