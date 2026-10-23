@@ -51,6 +51,9 @@ EditorBuildSettings:
     path: Assets/Scenes/2do Modulo/Level13.unity
     guid: 9c54f5a5119f0ca4e8c5dd531ff75db7
   - enabled: 1
+    path: Assets/Scenes/EscenaVideo.unity
+    guid: bdee250d2a64e7a42b53256c4fc28826
+  - enabled: 1
     path: Assets/Scenes/2do Modulo/Level15.unity
     guid: 71c3eb7a2f60e8242bfc20619a73de10
   - enabled: 1
